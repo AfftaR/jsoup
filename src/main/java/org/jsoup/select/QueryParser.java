@@ -229,7 +229,7 @@ public class QueryParser {
             evals.add(new CombiningEvaluator.Or(new Evaluator.Tag(normalize(tagName)), new Evaluator.TagEndsWith(normalize(tagName.replace("*|", ":")))));
         } else {
             // namespaces: if element name is "abc:def", selector must be "abc|def", so flip:
-            if (tagName.contains("|"))
+            if (tagName.contains("|")) 
                 tagName = tagName.replace("|", ":");
 
             evals.add(new Evaluator.Tag(tagName.trim()));

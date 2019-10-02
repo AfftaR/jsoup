@@ -153,7 +153,7 @@ abstract class Token {
 
         @SuppressWarnings({"TypeMayBeWeakened"})
         final Attributes getAttributes() {
-            return attributes;
+            return attributes; 
         }
 
         // these appenders are rarely hit in not null state-- caused by null chars.

@@ -1417,7 +1417,7 @@ public class Element extends Node {
 
 	void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
         if (!(childNodes.isEmpty() && tag.isSelfClosing())) {
-            if (out.prettyPrint() && (!childNodes.isEmpty() && (
+            if (out.prettyPrint() && (!childNodes.isEmpty() && ( 
                     tag.formatAsBlock() || (out.outline() && (childNodes.size()>1 || (childNodes.size()==1 && !(childNodes.get(0) instanceof TextNode))))
             )))
                 indent(accum, depth, out);

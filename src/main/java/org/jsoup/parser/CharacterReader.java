@@ -79,7 +79,7 @@ public final class CharacterReader {
      */
     public boolean isEmpty() {
         bufferUp();
-        return bufPos >= bufLength;
+        return bufPos >= bufLength; 
     }
 
     private boolean isEmptyNoBufferUp() {

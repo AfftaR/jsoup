@@ -15,7 +15,7 @@ apiKey="MTpEbzhXQThOaW14bHVQTVdZZXNBTTVLT0xhZ00"
 project="jsoup2"
 testsuite="Unit"
 importtype="junit"
-url="http://192.168.1.136:8080"
+url="http://192.168.1.182:8080"
 
 total=1
 counter=0

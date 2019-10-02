@@ -1347,7 +1347,7 @@ enum HtmlTreeBuilderState {
                 // chillax! we're done
             } else {
                 tb.error(this);
-                tb.transition(InBody);
+                tb.transition(InBody); 
                 return tb.process(t);
             }
             return true;

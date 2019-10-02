@@ -298,7 +298,7 @@ enum HtmlTreeBuilderState {
                         tb.reconstructFormattingElements();
                         tb.insertEmpty(startTag);
                         tb.framesetOk(false);
-                    } else if (StringUtil.inSorted(name, Constants.InBodyStartPClosers)) {
+                    } else if (StringUtil.inSorted(name, Constants.InBodyStartPClosers)) { 
                         if (tb.inButtonScope("p")) {
                             tb.processEndTag("p");
                         }
@@ -1347,7 +1347,7 @@ enum HtmlTreeBuilderState {
                 // chillax! we're done
             } else {
                 tb.error(this);
-                tb.transition(InBody); 
+                tb.transition(InBody);
                 return tb.process(t);
             }
             return true;

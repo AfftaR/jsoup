@@ -306,7 +306,7 @@ public class Entities {
             if (name.equals("US-ASCII"))
                 return ascii;
             if (name.startsWith("UTF-")) // covers UTF-8, UTF-16, et al
-                return utf;
+                return utf; 
             return fallback;
         }
     }
